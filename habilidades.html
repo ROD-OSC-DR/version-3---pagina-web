@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilidades - Rodrigo Oscategui</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light pt-5">
+  <!-- Header -->
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">
+        <span class="text-danger">R</span>odrigo <span class="text-warning">O</span>scategui
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-house-fill me-1"></i>Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre-mi.html">
+              <i class="bi bi-person-fill me-1"></i>Sobre mí
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos.html">
+              <i class="bi bi-folder-fill me-1"></i>Proyectos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="habilidades.html">
+              <i class="bi bi-star-fill me-1"></i>Habilidades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <i class="bi bi-envelope-fill me-1"></i>Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-primary text-white py-5 text-center position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="display-4 fw-bold mb-3">Mis Habilidades</h1>
+          <p class="lead text-white">Conocimientos técnicos y herramientas que domino</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Overview -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div id="skillsCarousel" class="carousel slide shadow-lg rounded-4" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner rounded-4" style="height: 400px; overflow: hidden;">
+              <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg" class="d-block w-100 object-fit-cover" alt="HTML" style="height: 400px;">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                  <h5>HTML</h5>
+                  <p>Estructuración semántica de contenido web</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg" class="d-block w-100 object-fit-cover" alt="CSS" style="height: 400px;">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                  <h5>CSS</h5>
+                  <p>Diseño y estilos para interfaces atractivas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg" class="d-block w-100 object-fit-cover" alt="JavaScript" style="height: 400px;">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                  <h5>JavaScript</h5>
+                  <p>Programación dinámica del lado cliente</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg" class="d-block w-100 object-fit-cover" alt="Java" style="height: 400px;">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                  <h5>Java</h5>
+                  <p>Desarrollo de aplicaciones robustas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg" class="d-block w-100 object-fit-cover" alt="Python" style="height: 400px;">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+                  <h5>Python</h5>
+                  <p>Programación versátil y scripting</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card p-4 shadow-sm border-0 rounded-4">
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-filetype-html text-danger me-2 fs-5"></i>
+                  <span class="fw-semibold">HTML</span>
+                </div>
+                <span class="fw-bold text-primary">80%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-filetype-css text-primary me-2 fs-5"></i>
+                  <span class="fw-semibold">CSS</span>
+                </div>
+                <span class="fw-bold text-primary">70%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" data-width="70%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-filetype-js text-warning me-2 fs-5"></i>
+                  <span class="fw-semibold">JavaScript</span>
+                </div>
+                <span class="fw-bold text-primary">40%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;" data-width="40%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-github text-dark me-2 fs-5"></i>
+                  <span class="fw-semibold">GitHub</span>
+                </div>
+                <span class="fw-bold text-primary">80%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-filetype-py text-success me-2 fs-5"></i>
+                  <span class="fw-semibold">Python</span>
+                </div>
+                <span class="fw-bold text-primary">70%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" data-width="70%"></div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-cup-hot text-info me-2 fs-5"></i>
+                  <span class="fw-semibold">Java</span>
+                </div>
+                <span class="fw-bold text-primary">50%</span>
+              </div>
+              <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" data-width="50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Categories -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h3 class="fw-bold position-relative d-inline-block pb-3">
+            Categorías de Habilidades
+            <span class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="width: 60px; height: 4px; border-radius: 2px;"></span>
+          </h3>
+          <p class="lead text-muted">Mis competencias organizadas por áreas de especialización</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Desarrollo Frontend</h4>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">HTML5</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">CSS3</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">JavaScript</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Bootstrap</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Responsive Design</span>
+            </div>
+            <p class="text-muted">Creación de interfaces de usuario atractivas e interactivas con las últimas tecnologías web.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                <i class="bi bi-server"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Desarrollo Backend</h4>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Java</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Python</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">APIs</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Bases de Datos</span>
+            </div>
+            <p class="text-muted">Desarrollo de la lógica del servidor y gestión de datos para aplicaciones robustas.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h4 class="fw-bold mb-0">Herramientas & Otros</h4>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Git & GitHub</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">Unity</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">MIT App Inventor</span>
+              <span class="badge bg-secondary text-dark px-2 py-1 rounded-pill">VS Code</span>
+            </div>
+            <p class="text-muted">Herramientas de desarrollo, control de versiones y entornos de desarrollo integrados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Path (Simplified with Bootstrap list-group) -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h3 class="fw-bold position-relative d-inline-block pb-3">
+            Mi Ruta de Aprendizaje
+            <span class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="width: 60px; height: 4px; border-radius: 2px;"></span>
+          </h3>
+          <p class="lead text-muted">Tecnologías que estoy aprendiendo y planificando dominar</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="list-group list-group-flush">
+            <div class="list-group-item d-flex align-items-start border-0 bg-transparent">
+              <div class="me-3 text-success fs-4"><i class="bi bi-check-circle-fill"></i></div>
+              <div>
+                <h5 class="mb-1 fw-bold">Fundamentos Web</h5>
+                <p class="text-muted mb-1">HTML, CSS, JavaScript básico</p>
+                <span class="badge bg-success">Completado</span>
+              </div>
+            </div>
+
+            <div class="list-group-item d-flex align-items-start border-0 bg-transparent">
+              <div class="me-3 text-success fs-4"><i class="bi bi-check-circle-fill"></i></div>
+              <div>
+                <h5 class="mb-1 fw-bold">Programación Orientada a Objetos</h5>
+                <p class="text-muted mb-1">Java y conceptos OOP</p>
+                <span class="badge bg-success">Completado</span>
+              </div>
+            </div>
+
+            <div class="list-group-item d-flex align-items-start border-0 bg-transparent">
+              <div class="me-3 text-info fs-4"><i class="bi bi-play-circle-fill"></i></div>
+              <div>
+                <h5 class="mb-1 fw-bold">Frameworks Frontend</h5>
+                <p class="text-muted mb-1">Bootstrap, próximamente React</p>
+                <span class="badge bg-info">En Progreso</span>
+              </div>
+            </div>
+
+            <div class="list-group-item d-flex align-items-start border-0 bg-transparent">
+              <div class="me-3 text-secondary fs-4"><i class="bi bi-circle"></i></div>
+              <div>
+                <h5 class="mb-1 fw-bold">Base de Datos</h5>
+                <p class="text-muted mb-1">MySQL, PostgreSQL</p>
+                <span class="badge bg-secondary">Próximamente</span>
+              </div>
+            </div>
+
+            <div class="list-group-item d-flex align-items-start border-0 bg-transparent">
+              <div class="me-3 text-secondary fs-4"><i class="bi bi-circle"></i></div>
+              <div>
+                <h5 class="mb-1 fw-bold">Desarrollo Full Stack</h5>
+                <p class="text-muted mb-1">Node.js, Express, MongoDB</p>
+                <span class="badge bg-secondary">Futuro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h3 class="fw-bold position-relative d-inline-block pb-3">
+            Certificaciones y Logros
+            <span class="position-absolute bottom-0 start-50 translate-middle-x bg-primary" style="width: 60px; height: 4px; border-radius: 2px;"></span>
+          </h3>
+          <p class="lead text-muted">Reconocimientos académicos y técnicos obtenidos</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4 d-flex flex-row align-items-center">
+            <div class="bg-light text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Estudiante Universitario</h5>
+              <p class="text-muted mb-1">Universidad Continental - Ingeniería de Sistemas e Informática</p>
+              <span class="badge bg-secondary">2024 - Presente</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4 d-flex flex-row align-items-center">
+            <div class="bg-light text-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Primer Proyecto Web</h5>
+              <p class="text-muted mb-1">Desarrollo exitoso de página web empresarial</p>
+              <span class="badge bg-secondary">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4 d-flex flex-row align-items-center">
+            <div class="bg-light text-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+              <i class="bi bi-controller"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Desarrollo de Videojuegos</h5>
+              <p class="text-muted mb-1">Primer juego desarrollado en Unity</p>
+              <span class="badge bg-secondary">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 p-4 shadow-sm border-0 rounded-4 d-flex flex-row align-items-center">
+            <div class="bg-light text-info rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px; font-size: 1.5rem;">
+              <i class="bi bi-phone-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1">Desarrollo Móvil</h5>
+              <p class="text-muted mb-1">Primera app móvil con MIT App Inventor</p>
+              <span class="badge bg-secondary">2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section (Duplicated from index.html for consistency) -->
+  <section class="bg-dark text-white py-5 text-center position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="mb-4 fw-bold">¿Listo para conocer más sobre mi trabajo?</h2>
+          <p class="lead mb-4">
+            Explora mis proyectos, conoce mis habilidades y descubre cómo puedo aportar valor a tu equipo.
+          </p>
+          <div class="d-flex justify-content-center flex-wrap">
+            <a href="proyectos.html" class="btn btn-primary btn-lg me-3 mb-2 mb-md-0">
+              <i class="bi bi-folder me-2"></i>Ver Proyectos
+            </a>
+            <a href="sobre-mi.html" class="btn btn-outline-primary btn-lg mb-2 mb-md-0">
+              <i class="bi bi-person me-2"></i>Conocer Más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 Rodrigo Oscategui. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="d-flex justify-content-end gap-3">
+            <a href="#" class="btn btn-outline-light rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-github"></i></a>
+            <a href="#" class="btn btn-outline-light rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-outline-light rounded-circle p-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
